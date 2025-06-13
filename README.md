@@ -6,7 +6,7 @@ Tiny x64 Windows C++ library that has functions to get SSN number of a specific 
 
 ```
 LPVOID MapNtdllFromDisk();  // Returns base pointer to loaded-from-disk ntdll.dll
-WORD GetSyscallNumber(const std::string& funcName);  // returns SSN Numver of funcName or 0xFFFF in case something went wrong
+DWORD GetSyscallNumber(const std::string& funcName);  // returns SSN Number of funcName or 0xFFFFFFFF in case something went wrong
 int IsFunctionHooked(const std::string& funcName);  // returns 1 if funcName is hooked, 0 is not and -1 in case of error
 ```
 
