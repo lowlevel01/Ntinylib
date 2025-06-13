@@ -20,5 +20,5 @@ struct SyscallEntry {
 
 
 LPVOID MapNtdllFromDisk();
-WORD GetSyscallNumber(const std::string& funcName);
+DWORD GetSyscallNumber(const std::string& funcName);
 int IsFunctionHooked(const std::string& funcName);
